@@ -14,6 +14,8 @@ function GameLevelState:__new(display)
    builder:rectangle("fill", 20, 20, 25, 25, prism.cells.Pit)
 
    builder:addActor(prism.actors.Player(), 12, 12)
+   builder:addActor(prism.actors.Glowshroom(), 17, 14)
+   builder:addActor(prism.actors.Glowshroom(), 16, 15)
    builder:addActor(prism.actors.Torch(), 20, 17)
 
    -- Keep a reference to the light system
