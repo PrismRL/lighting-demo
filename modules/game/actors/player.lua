@@ -6,7 +6,8 @@ prism.registerActor("Player", function()
       prism.components.Collider(),
       prism.components.PlayerController(),
       prism.components.Senses(),
-      prism.components.Sight { range = 64, fov = true },
+      prism.components.LightSight { range = 24, fov = true, darkvision = 2 / 16 },
       prism.components.Mover { "walk" },
+      prism.components.Light(prism.Color4.YELLOW, 9, prism.lighteffects.FlickerEffect()),
    }
 end)
