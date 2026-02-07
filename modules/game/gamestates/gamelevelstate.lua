@@ -25,7 +25,7 @@ function GameLevelState:__new(display)
    builder:addSystems(prism.systems.SensesSystem(), prism.systems.LightSightSystem(), self.lightSystem)
 
    -- A (display) pass modifies an entity's drawable before it's drawn to the display.
-   -- We provide a reasonable default pass that applies light values to entities. Extend or create your own
+   -- We provide a reasonable default pass that applies light values to entities. Extend it or create your own
    -- pass to modify how lighting gets drawn!
    self.lightPass = spectrum.passes.SightLightPass(self.lightSystem)
 
